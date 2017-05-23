@@ -1,0 +1,3 @@
+#!/usr/bin/perl
+chomp($val = <STDIN>);
+print $val x <STDIN> . "\n";

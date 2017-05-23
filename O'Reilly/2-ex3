@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+$val = <STDIN>;
+if($val <= 0) {
+  $val = 0;
+}
+print $val * 2 * 3.141592654;
+print "\n";
