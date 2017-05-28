@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+foreach (<>) {
+  chomp($line = $_);
+  if(/(fred.*wilma|wilma.*fred)/) {
+    print $line . "\n";
+  }
+}

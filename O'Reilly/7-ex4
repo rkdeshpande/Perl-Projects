@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+foreach (<>) {
+  chomp($line = $_);
+  if(/([A-Z]+[a-z]+|[a-z]+[A-Z]+)/) {
+    print $line . "\n";
+  }
+}

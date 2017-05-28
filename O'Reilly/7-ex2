@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+foreach (<>) {
+  chomp($line = $_);
+  if(/(f|F)red/) {
+    print $line . "\n";
+  }
+}
