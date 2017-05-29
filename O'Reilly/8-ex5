@@ -1,8 +1,8 @@
 #!/usr/bin/perl
 while (<>) {
   chomp;
-  if (/match/) {
-    print "Matched: |$`<$&>$'|\n";
+  if (/\s+$/) {
+    print "<$`|$&|$'>\n";
   } else {
     print "No match: |$_|\n";
   }

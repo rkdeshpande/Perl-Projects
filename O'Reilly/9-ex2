@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+my $in = $ARGV[0];
+my $out = $in . ".out";
+open IN, "<$in";
+open OUT, ">$out";
+while(<IN>) {
+  s/Fred/Larry/ig;
+  print OUT $_;
+}
