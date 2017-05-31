@@ -1,0 +1,4 @@
+#!/usr/bin/perl
+## Copyright (C) 2017 by Rohan Deshpande
+
+print <STDIN> x <STDIN>;

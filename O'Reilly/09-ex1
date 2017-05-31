@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+## Copyright (C) 2017 by Rohan Deshpande
+
+my $what = "fred|barney";
+foreach (<STDIN>) {
+  if(/^(($what){3})$/) {
+    print "I found this: $1\n";
+  } else {
+    print "WE DIDN'T MATCH :-(\n";
+  }
+}

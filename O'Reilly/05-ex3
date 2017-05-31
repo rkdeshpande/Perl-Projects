@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+## Copyright (C) 2017 by Rohan Deshpande
+
+chomp($width = <STDIN>);
+chomp(@lines = <STDIN>);
+$ruler = ("1234567890" x ($width / 10));
+my $format = (("%"."$width"."s\n") x @lines);
+printf "%s\n$format", $ruler, @lines;

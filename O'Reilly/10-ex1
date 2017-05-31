@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+## Copyright (C) 2017 by Rohan Deshpande
+
+my $answer = int(1 + rand 100);
+
+{
+  print "Enter a guess: ";
+  chomp(my $guess = <STDIN>);
+  last if($guess == "quit" || $guess == "exit" || $guess == "");
+  if($guess == $answer) {
+    print "Correct! The answer is $answer!\n";
+    last;
+  } elsif($guess > $answer) {
+    print "Too high!\n";
+    redo;
+  } else {
+    print "Too low!\n";
+    redo;
+  }
+}

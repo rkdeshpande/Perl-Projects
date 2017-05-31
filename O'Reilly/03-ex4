@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+@vals = <STDIN>;
+@sorted_vals = sort @vals;
+$print = "";
+foreach $val (@sorted_vals) {
+	chomp($val);
+	$print .= $val . " ";
+}
+print "$print\n";

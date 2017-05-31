@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+## Copyright (C) 2017 by Rohan Deshpande
+
+while (<>) {
+  chomp;
+  if (/(\b\w*a\b)(.{0,5})/) {
+    print "\$1 contains '$1'\n\$2 contains '$2'\n";
+  } else {
+    print "No match: |$_|\n";
+  }
+}

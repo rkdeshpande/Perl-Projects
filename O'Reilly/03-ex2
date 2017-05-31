@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+@names = qw (rohan hank swope brent sammy);
+@nums = <STDIN>;
+foreach $num (@nums) {
+	print $names[$num] . " ";	
+}
+print "\n";

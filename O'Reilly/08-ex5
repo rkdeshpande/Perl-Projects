@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+## Copyright (C) 2017 by Rohan Deshpande
+
+while (<>) {
+  chomp;
+  if (/\s+$/) {
+    print "<$`|$&|$'>\n";
+  } else {
+    print "No match: |$_|\n";
+  }
+}

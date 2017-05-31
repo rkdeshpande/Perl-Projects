@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+## Copyright (C) 2017 by Rohan Deshpande
+
+
+sub total {
+    my $total = 0;
+    foreach (@_) {
+        $total += $_;
+    }
+    $total;
+}
+
+my @fred = 1..1000;
+my $fred_total = &total(@fred);
+print "The total of 1 to 1000 is $fred_total.\n";
