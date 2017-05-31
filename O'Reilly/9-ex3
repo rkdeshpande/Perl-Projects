@@ -2,10 +2,13 @@
 ## Copyright (C) 2017 by Rohan Deshpande
 
 my $in = $ARGV[0];
-my $out = $in . ".out";
+my $out = $in;
+$out =~ s/(\.\w+)?$/.out/;
 open IN, "<$in";
 open OUT, ">$out";
 while(<IN>) {
-  s/Fred/Larry/ig;
+  s/Fred/xxxreplacexxx/ig;
+  s/Wilma/Fred/ig;
+  s/xxxreplacexxx/Wilma/ig;
   print OUT $_;
 }

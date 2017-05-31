@@ -1,4 +1,6 @@
 #!/usr/bin/perl
+## Copyright (C) 2017 by Rohan Deshpande
+
 foreach (<>) {
   chomp($line = $_);
   if(/([A-Z]+[a-z]+|[a-z]+[A-Z]+)/) {
