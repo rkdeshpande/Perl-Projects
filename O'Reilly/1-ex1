@@ -1,6 +1,0 @@
-#!/usr/bin/perl
-## Copyright (C) 2017 by Rohan Deshpande
-
-    print    # This is a comment
-"Hello, world!\n"
-  ;    # Don't write your Perl code like this!

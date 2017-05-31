@@ -1,3 +1,0 @@
-#!/usr/bin/perl
-@vals = <STDIN>;
-print sort @vals;
